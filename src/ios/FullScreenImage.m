@@ -34,8 +34,8 @@
         
         NSString *fullPath = [[command.arguments objectAtIndex:0] valueForKey:@"url"];
         
-        NSString *soundFilePath = [NSString stringWithFormat:@"%@/www/%@",[[NSBundle mainBundle] resourcePath],fullPath];
-        NSURL *URL = [NSURL fileURLWithPath:soundFilePath];
+        // NSString *soundFilePath = [NSString stringWithFormat:@"%@/www/%@",[[NSBundle mainBundle] resourcePath],fullPath];
+        NSURL *URL = [NSURL fileURLWithPath:fullPath];
         
         if (URL) {
             
